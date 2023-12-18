@@ -24,8 +24,8 @@ export class AppComponent implements OnInit {
   startGame() {
     const canvas = document.createElement('canvas');
     canvas.id = 'gameCanvas';
-    canvas.width = 400;
-    canvas.height = 600;
+    canvas.width = 200;
+    canvas.height = 400;
     document.body.appendChild(canvas);
 
     const ctx = canvas.getContext('2d');
