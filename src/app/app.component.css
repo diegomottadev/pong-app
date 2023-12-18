@@ -1,0 +1,7 @@
+.game-container {
+    position: relative;
+    width: 400px; /* Ajusta el ancho según tus preferencias */
+    height: 600px; /* Ajusta la altura según tus preferencias */
+    margin: 20px auto; /* Centra el juego en la pantalla */
+    border: 2px solid #000; /* Borde para el área de juego */
+  }
