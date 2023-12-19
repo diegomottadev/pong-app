@@ -3,43 +3,41 @@ This Angular application implements a simple pong game. The game involves a padd
 
 ### Features
 
-1. **Paddle Movement:**
+**Paddle Movement:**
    - The paddle can be moved horizontally using the left and right arrow keys.
 
-2. **Ball Bouncing:**
+**Ball Bouncing:**
    - The ball moves in a defined direction and bounces off the walls and the paddle.
 
-3. **Wall Destruction:**
+**Wall Destruction:**
    - The ball breaks down walls upon collision, and the player scores points for each destroyed wall.
 
-4. **Game Restart:**
+**Game Restart:**
    - The game can be restarted, resetting the ball, paddle, and walls.
 
-5. **Visual Effects:**
+**Visual Effects:**
    - The game features visual effects such as a vibrating screen upon certain events.
 
-6. **Sound Effects:**
+**Sound Effects:**
    - Sound effects play when the ball bounces or collides with certain objects.
 
 ### How to Run
 
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone <repository-url>
    cd <repository-directory>
    ```
 
-2. Install dependencies:
+Install dependencies:
    ```bash
    npm install
    ```
-
-3. Start the development server:
+Start the development server:
    ```bash
    ng serve
    ```
-
-4. Open your browser and navigate to `http://localhost:4200/`.
+Open your browser and navigate to `http://localhost:4200/`.
 
 ### Snapshot
 
@@ -55,41 +53,36 @@ This Angular application implements a simple pong game. The game involves a padd
 
 The codebase is organized into several components:
 
-1. **App Component (`app.component.ts`):**
+**App Component (`app.component.ts`):**
    - Initializes the game by creating a canvas and instantiating the `GameBoardComponent`.
 
-2. **Game Board Component (`game-board.component.ts`):**
+**Game Board Component (`game-board.component.ts`):**
    - Implements the core logic of the game, including ball movement, collision detection, and rendering.
 
-3. **Paddle Component (`paddle.component.ts`):**
+**Paddle Component (`paddle.component.ts`):**
    - Represents the paddle in the game.
 
-4. **Game Service (`game-board.service.ts`):**
+**Game Service (`game-board.service.ts`):**
    - Provides a service for game-wide functionality, such as signaling a game restart.
 
 ### Limitations
 
-1. **Simplicity:**
+**Simplicity:**
    - The game is intentionally kept simple and may lack advanced features found in commercial games.
-
-2. **Scalability:**
+**Scalability:**
    - The codebase is designed for educational purposes and may not be optimized for scalability or extensive feature additions.
-
-3. **Graphics:**
+**Graphics:**
    - The focus is on functionality, and the game lacks sophisticated graphics or animations.
 
 ### Future Improvements
 
-1. **Level Design:**
+**Level Design:**
    - Add multiple levels with different wall arrangements and difficulty levels.
-
-2. **Scoreboard:**
+**Scoreboard:**
    - Implement a scoreboard to track and display the player's score.
-
-3. **Enhanced Graphics:**
+**Enhanced Graphics:**
    - Improve visual elements, including better graphics, animations, and effects.
-
-4. **Mobile Compatibility:**
+**Mobile Compatibility:**
    - Make the game responsive for mobile devices.
 
 ### Contributing
