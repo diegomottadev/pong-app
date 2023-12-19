@@ -1,27 +1,97 @@
-# TenisApp
+### Overview
+This Angular application implements a simple pong game. The game involves a paddle, a bouncing ball, and walls. The objective is to bounce the ball off the paddle to break down all the walls on the screen.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.7.
+### Features
 
-## Development server
+1. **Paddle Movement:**
+   - The paddle can be moved horizontally using the left and right arrow keys.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+2. **Ball Bouncing:**
+   - The ball moves in a defined direction and bounces off the walls and the paddle.
 
-## Code scaffolding
+3. **Wall Destruction:**
+   - The ball breaks down walls upon collision, and the player scores points for each destroyed wall.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+4. **Game Restart:**
+   - The game can be restarted, resetting the ball, paddle, and walls.
 
-## Build
+5. **Visual Effects:**
+   - The game features visual effects such as a vibrating screen upon certain events.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+6. **Sound Effects:**
+   - Sound effects play when the ball bounces or collides with certain objects.
 
-## Running unit tests
+### How to Run
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
 
-## Running end-to-end tests
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
 
-## Further help
+4. Open your browser and navigate to `http://localhost:4200/`.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### Snapshot
+
+![image](https://github.com/diegomottadev/pong-app/assets/64202326/7f91c704-a837-411e-9121-e7ed9fb32e39)
+
+
+### Game Controls
+
+- **Left Arrow Key:** Move the paddle left.
+- **Right Arrow Key:** Move the paddle right.
+
+### Code Structure
+
+The codebase is organized into several components:
+
+1. **App Component (`app.component.ts`):**
+   - Initializes the game by creating a canvas and instantiating the `GameBoardComponent`.
+
+2. **Game Board Component (`game-board.component.ts`):**
+   - Implements the core logic of the game, including ball movement, collision detection, and rendering.
+
+3. **Paddle Component (`paddle.component.ts`):**
+   - Represents the paddle in the game.
+
+4. **Game Service (`game-board.service.ts`):**
+   - Provides a service for game-wide functionality, such as signaling a game restart.
+
+### Limitations
+
+1. **Simplicity:**
+   - The game is intentionally kept simple and may lack advanced features found in commercial games.
+
+2. **Scalability:**
+   - The codebase is designed for educational purposes and may not be optimized for scalability or extensive feature additions.
+
+3. **Graphics:**
+   - The focus is on functionality, and the game lacks sophisticated graphics or animations.
+
+### Future Improvements
+
+1. **Level Design:**
+   - Add multiple levels with different wall arrangements and difficulty levels.
+
+2. **Scoreboard:**
+   - Implement a scoreboard to track and display the player's score.
+
+3. **Enhanced Graphics:**
+   - Improve visual elements, including better graphics, animations, and effects.
+
+4. **Mobile Compatibility:**
+   - Make the game responsive for mobile devices.
+
+### Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests.
