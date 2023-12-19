@@ -1,15 +1,14 @@
+/* Styles for the game container */
 .game-container {
-  position: relative;
+  position: relative; /* Positioned relative to its normal position */
   width: 300px;
   height: 500px;
-  border: 15px solid #fff;
-  margin-bottom: 100px;
-  border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ajusta según tus preferencias */
-
+  border: 15px solid #fff; /* Border with 15px width and white color */
+  margin-bottom: 100px; /* Bottom margin to provide space */
+  border-radius: 10px; /* Rounded corners with a radius of 10px */
+  position: absolute; /* Positioned absolute to its first positioned (not static) ancestor element */
+  top: 50%; /* Positioned at the vertical center of the parent container */
+  left: 50%; /* Positioned at the horizontal center of the parent container */
+  transform: translate(-50%, -50%); /* Centering trick using transform */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Box shadow with a slight blur for a subtle shadow effect */
 }
-  
