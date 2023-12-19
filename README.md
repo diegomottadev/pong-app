@@ -59,9 +59,6 @@ The codebase is organized into several components:
 **Game Board Component (`game-board.component.ts`):**
    - Implements the core logic of the game, including ball movement, collision detection, and rendering.
 
-**Paddle Component (`paddle.component.ts`):**
-   - Represents the paddle in the game.
-
 **Game Service (`game-board.service.ts`):**
    - Provides a service for game-wide functionality, such as signaling a game restart.
 
